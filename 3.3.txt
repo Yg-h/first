@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+int main()
+
+{  
+
+      int dif(int x,int y,int z);
+
+      int a,b,c,d;
+
+      scanf("%d%d%d",&a,&b,&c);
+
+      d=dif(a,b,c);
+
+      printf("Max-Min=%d\n",d);
+
+      return 0;
+
+}
+
+int dif(int x,int y,int z)
+
+{
+
+      int max(int x,int y,int z);
+
+      int min(int x,int y,int z);
+
+      return max(x,y,z)-min(x,y,z);
+
+}
+
+int max(int x,int y,int z)
+
+{   
+
+      int r, c;
+
+       r=x>y?x:y;
+
+       c=r>z?r:z;
+
+       return c;
+
+}
+
+int min(int x,int y,int z)
+
+{     
+
+       int r, c;
+
+       r=x<y?x:y;
+
+       c=r<z?r:z;
+
+       return c;
+
+}
